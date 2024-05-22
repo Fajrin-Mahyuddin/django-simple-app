@@ -1,0 +1,10 @@
+{% extends "layout.html" %}
+{% block title %}
+	Welcome home todos
+{% endblock title %}
+
+{% block content %}
+	<h2>go check data with this link</h2>
+	<a href="{% url 'add:add-page' %}">Add todo</a>
+	<a href="{% url 'add:add-page' %}">Lists todo</a>
+{% endblock content %}

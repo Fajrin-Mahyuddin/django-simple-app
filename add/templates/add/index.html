@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Add todo</title>
+  </head>
+  <body>
+    <h1>this is to add page {{todo_list.due_date|default:"yah empty"}} </h1>
+    {{todo_list.due_date }}
+    <form action="{% url 'add:add-post' 123 %} " method="post">
+      {% csrf_token %}
+      <h2>Input</h2>
+      <input type="text" />
+      <button type="submit">send</button>
+      {% comment "oke" %}
+      <div>oke this is comment out with text</div>
+      {% endcomment %}
+
+    </form>
+  </body>
+</html>
